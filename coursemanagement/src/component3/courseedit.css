@@ -1,0 +1,58 @@
+.container {
+    margin-top: 25px;
+    width: 1000px;
+    margin-left: 320px;
+    margin-bottom: 50px;
+  }
+  
+  .form-label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control {
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  .textarea-control {
+    min-height: 100px;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1rem;
+  }
+  
+  .custom-select {
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  .btn {
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .btn-primary {
+    color: #ffffff;
+    background-color: #164863;
+    border-color: #164863;
+  }
+  
+  .btn-primary:hover {
+    background-color: #427D9D;
+    border-color: #427D9D;
+  }
+  
+  
+  .buttons-container {
+    display: flex;
+    justify-content:flex-start;
+
+  }
+  .upload-icon{
+    margin-left: 8px;
+  }
+  
+    

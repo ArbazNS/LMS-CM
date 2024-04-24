@@ -1,0 +1,41 @@
+.Courselisttable{
+    margin-top:25px;
+    width: 1000px;
+    height: 50px;
+    margin-left: 320px;  
+}
+
+.Courselisttable th,
+.Courselisttable td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.heading-content {
+    display: flex;
+    align-items: center;
+  }
+
+.material-symbols-outlined {
+    margin-left: 5px; /* Add some space between text and icon */
+  }
+
+  .badagebutton{
+    cursor: pointer;
+  }
+
+  .custom-toggle::after {
+    display: none !important;
+  }
+
+.bdageactvecolor{
+    color: #ffff;
+    background-color: #427d9d; 
+}
+
+.dropdown.item:hover {
+  color: white; /* Color change on hover */
+}
+
