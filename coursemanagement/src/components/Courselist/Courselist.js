@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./courselist.css";
-import { Link } from 'react-router-dom';
-
+import Coursenav from "../Coursenav/Coursenav";
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Courselist = () => {
   const initialBadgeState = [
@@ -25,14 +26,22 @@ const Courselist = () => {
     setBadgeStates(newBadgeStates);
   };
 
-  
-
-  const handleDeleteClick = (index) => {
-  };
+  const handleDeleteClick = (index) => {};
 
   return (
     <>
-          <h1 className='' style={{marginLeft:'320px'}}>Course Manegment</h1>
+          <Container fluid>
+      <Row>
+        <Col >
+        </Col>
+        <Col>
+          <Coursenav />
+        </Col>
+      </Row>
+    </Container>
+      <h1 className="" style={{ marginLeft: "320px" }}>
+        Course Management
+      </h1>
 
       <table className="table Courselisttable table-hover">
         <thead>
@@ -100,17 +109,35 @@ const Courselist = () => {
                     </span>
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item className="dropdown-item" >
-                      <Link to="/courseedit" className="link" style={{ textDecoration: 'none', color: 'black' }}>
-                        <span class="material-symbols-outlined ">edit</span>
-                        Edit
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleDeleteClick(index)} className="dropdown-item">
-                      <span class="material-symbols-outlined">delete</span>
-                      Delete
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
+  <Dropdown.Item className="dropdown-item">
+    <Link
+      to={`/coursedetail/Course ${index + 1}`}
+      className="link"
+      style={{ textDecoration: "none", color: "black" }}
+    >
+      <span className="material-symbols-outlined icon">visibility</span>
+      <span className="text">View Course</span>
+    </Link>
+  </Dropdown.Item>
+  <Dropdown.Item className="dropdown-item">
+    <Link
+      to="/courseedit"
+      className="link"
+      style={{ textDecoration: "none", color: "black" }}
+    >
+      <span className="material-symbols-outlined icon">edit</span>
+      <span className="text">Edit</span>
+    </Link>
+  </Dropdown.Item>
+  <Dropdown.Item
+    onClick={() => handleDeleteClick(index)}
+    className="dropdown-item"
+  >
+    <span className="material-symbols-outlined icon">delete</span>
+    <span className="text">Delete</span>
+  </Dropdown.Item>
+</Dropdown.Menu>
+
                 </Dropdown>
               </td>
             </tr>
