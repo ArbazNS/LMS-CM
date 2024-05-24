@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './courseedit.css';
 import { FiUpload } from 'react-icons/fi'; // Import upload icon from react-icons library
 import { Link } from 'react-router-dom';
+import GoToBackPageButton from '../basic_componenrts/GoToBackPageButton';
 
 const CourseAddForm = () => {
   const [formData, setFormData] = useState({
@@ -53,13 +54,13 @@ const CourseAddForm = () => {
           </label>
           <input type="file" className="form-control" accept="image/*" id="thumbnail" name="thumbnail" onChange={handleChange} /> {/* Changed type to 'file' */}
         </div>
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <label htmlFor="resources" className="form-label">
             Upload Resources
-            <FiUpload className="upload-icon" /> {/* Added upload icon */}
+            <FiUpload className="upload-icon" /> 
           </label>
-          <input type="file" className="form-control" id="resources" name="resources" onChange={handleChange} /> {/* Changed type to 'file' */}
-        </div>
+          <input type="file" className="form-control" id="resources" name="resources" onChange={handleChange} /> 
+        </div> */}
         <div className="mb-3">
           <label htmlFor="category" className="form-label">Course Category</label>
           <select className="form-select" id="category" name="category" value={formData.category} onChange={handleChange}>
@@ -75,6 +76,7 @@ const CourseAddForm = () => {
         </div>
 
         <div className="buttons-container">
+          <GoToBackPageButton/>
           <Link to="/" style={{ textDecoration: 'none' }}>
             <button type="button " className="btn btnaddnewcourse btn-primary">
               Cancel
@@ -82,7 +84,7 @@ const CourseAddForm = () => {
           </Link>
           <Link to="/lessonmanagement" style={{ textDecoration: 'none' }}>
             <button type="button" className="btn btnaddnewcourse btn-primary">
-              Continue
+              View Lessons
             </button>
           </Link>
         </div>

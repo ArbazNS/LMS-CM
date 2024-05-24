@@ -10,6 +10,7 @@ import CourseAddForm from './component2/Courseaddform';
 import LessonManagementPage from './component4/LessonManagementPage';
 import LessonList from './component4/LessonList ';
 import LessonForm from './component4/LessonForm';
+import Coursedetail from './components/CourseDetail/CourseDetail';
 import {Route, Router, Routes } from 'react-router-dom';
 
 
@@ -22,9 +23,6 @@ const App = () => {
         <Col >
           <Sidebar />
         </Col>
-        <Col>
-          <Coursenav />
-        </Col>
       </Row>
     </Container>
       <Routes>
@@ -34,6 +32,7 @@ const App = () => {
         <Route path='/lessonmanagement' element={<LessonManagementPage />} />
         <Route path='/lessonlist' element={<LessonList />} />
         <Route path='/lessonform' element={<LessonForm />} />
+        <Route path="/coursedetail/:title" element={<Coursedetail />} />
       </Routes>
    </>
   );

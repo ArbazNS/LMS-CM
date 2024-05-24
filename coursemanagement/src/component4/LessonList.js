@@ -1,10 +1,11 @@
 // LessonList.js
 import React from 'react';
+import GoToBackPageButton from '../basic_componenrts/GoToBackPageButton';
 
 const LessonList = ({ lessons }) => {
   return (
     <div>
-      <h2>Lessons</h2>
+      <h2 >Lessons</h2>
       <ul className="list-group">
         {lessons.map(lesson => (
           <li key={lesson.id} className="list-group-item">

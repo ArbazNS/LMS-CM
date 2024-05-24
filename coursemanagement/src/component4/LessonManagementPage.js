@@ -2,6 +2,7 @@
 import React, { useState} from 'react'; // Assuming you have a component for displaying lessons
 import { Dropdown } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import './buttonlm.css';
 
 
 const LessonManagementPage = () => {
@@ -29,7 +30,7 @@ const LessonManagementPage = () => {
   
     return (
       <>
-      <h1 className='' style={{marginLeft:'320px'}}>Lesson Manegment</h1>
+      <h1 className='mt-5' style={{marginLeft:'320px'}}>Lesson Manegment</h1>
         <table className="table Courselisttable table-hover">
           <thead>
             <tr>
@@ -106,14 +107,19 @@ const LessonManagementPage = () => {
             ))}
           </tbody>
         </table>
-        <Link
-            to="/"
-            style={{ textDecoration: "none",marginLeft:'1150px', }}
-          >
-            <button type="submit" className="btn btn-primary mr-2">
-              Goto Courses
+        
+        <div className="buttons-container">
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <button type="button " className="btn btnaddnewcourse btn-primary align">
+              Cancel
             </button>
           </Link>
+          <Link to="/lessonform" style={{ textDecoration: 'none' }}>
+            <button type="button" className="btn btnaddnewcourse btn-primary align addlessonbtn">
+              Add Lesson
+            </button>
+          </Link>
+        </div>
       </>
     );
   };

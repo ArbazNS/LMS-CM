@@ -35,7 +35,31 @@
     background-color: #427d9d; 
 }
 
-.dropdown.item:hover {
-  color: white; /* Color change on hover */
+.dropdown-item:hover {
+  color: Black; /* Color change on hover */
+  background-color: #d0e8f5 ;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+
+.link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.material-symbols-outlined.icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.text {
+  display: inline-block;
 }
 

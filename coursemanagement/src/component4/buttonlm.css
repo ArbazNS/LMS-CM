@@ -1,0 +1,10 @@
+.align{
+    display: flex;
+    flex-direction: row;
+    margin-left: 320px;
+    
+}
+
+.addlessonbtn{
+    margin-left: 780px;
+}

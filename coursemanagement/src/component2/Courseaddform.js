@@ -53,13 +53,13 @@ const CourseAddForm = () => {
           </label>
           <input type="file" className="form-control" accept="image/*" id="thumbnail" name="thumbnail" onChange={handleChange} /> {/* Changed type to 'file' */}
         </div>
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <label htmlFor="resources" className="form-label">
             Upload Resources
-            <FiUpload className="upload-icon" /> {/* Added upload icon */}
+            <FiUpload className="upload-icon" /> 
           </label>
-            <input type="file" className="form-control" id="resources" name="resources" onChange={handleChange} /> {/* Changed type to 'file' */}
-        </div>
+            <input type="file" className="form-control" id="resources" name="resources" onChange={handleChange} /> 
+        </div> */}
         <div className="mb-3">
           <label htmlFor="category" className="form-label">Course Category</label>
           <select className="form-select" id="category" name="category" value={formData.category} onChange={handleChange}>
@@ -82,7 +82,7 @@ const CourseAddForm = () => {
           </Link>
           <Link to="/lessonform" style={{ textDecoration: 'none' }}>
             <button type="button" className="btn btnaddnewcourse btn-primary">
-              Continue
+              Add Lesson
             </button>
           </Link>
         </div>

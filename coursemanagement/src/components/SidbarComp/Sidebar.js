@@ -34,7 +34,7 @@ const Sidebar = () => {
         </li>
         {/* Other nav items */}
       </ul>
-      <hr />
+      {/* <hr />
       <Dropdown>
         <Dropdown.Toggle variant="light" id="dropdown-basic" className="profiletoggle">
           <img
@@ -56,7 +56,7 @@ const Sidebar = () => {
             <span class="material-symbols-outlined">logout</span>Sign out
           </Dropdown.Item>
         </Dropdown.Menu>
-      </Dropdown>
+      </Dropdown> */}
     </div>
   );
 };

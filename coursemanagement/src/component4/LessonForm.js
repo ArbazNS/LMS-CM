@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import GoToBackPageButton from "../basic_componenrts/GoToBackPageButton";
 
 const LessonForm = ({ onSubmit, onCancel }) => {
   const [lessonData, setLessonData] = useState({
@@ -64,7 +65,7 @@ const LessonForm = ({ onSubmit, onCancel }) => {
 
   return (
     <div className="container">
-      <h1>Create/Edit Lesson</h1>
+      <h1 className="mt-5">Create/Edit Lesson</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-3">
           <label>Title</label>
@@ -137,6 +138,7 @@ const LessonForm = ({ onSubmit, onCancel }) => {
             {" "}
             Save & Add Another Lesson
           </button>
+          
 
           <Link
             to="/lessonmanagement"
@@ -146,6 +148,7 @@ const LessonForm = ({ onSubmit, onCancel }) => {
               Save
             </button>
           </Link>
+          
         </div>
       </form>
     </div>
