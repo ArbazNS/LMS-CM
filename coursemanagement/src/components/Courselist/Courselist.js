@@ -1,3 +1,4 @@
+{/*course list page*/}
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
