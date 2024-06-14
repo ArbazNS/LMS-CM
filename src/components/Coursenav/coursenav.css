@@ -1,0 +1,52 @@
+.coursenavbar {
+  width: 1000px;
+  height: 70px;
+  background-color: #427d9d;
+  margin: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end; /* To move the exit link to flex-end */
+  align-items: center;
+  text-wrap: wrap;
+  border: 1px solid #bcb9b9;
+}
+.exit-link {
+  display: flex;
+  align-items: center; /* Align the icon and text vertically */
+  text-decoration: none;
+  color: black;
+  width: 200px;
+}
+
+
+.btnaddnewcourse{
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  background-color: #60a3c7; 
+
+}
+
+.btnaddnewcourse:hover {
+  background-color: #5795b6;
+  color: #ffff;
+}
+
+.exit-link:hover {
+  color: #427d9d; /* Add underline on hover */
+}
+
+.material-symbols-outlined {
+  margin-left: 5px; /* Add some space between text and icon */
+}
+
+.coursenavsearchbox{
+width: 300px;
+}
+
+
+@media (max-width: 768px) {
+  .coursenavbar {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+}

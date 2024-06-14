@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 00;
+  font-style: normal;
+}
+
+.sidebar {
+  width: 280px;
+  height: 100vh; /* Full height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* Light gray background */
+  padding: 20px;
+  border-right: 1px solid #bcb9b9; /* Border color */
+}
+
+.sidebar a {
+  color: black; /* Text color */
+  text-decoration: none;
+  transition: all ease-in-out 0.2s smooth;
+}
+
+.nav-link svg {
+  margin-right: 5px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #f8f9fa; /* Light gray background on hover */
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: white; /* Text color on hover and when active */
+  background-color: #427d9d; /* Background color when active */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  margin-right: 8px;
+}
+
+.dropdown-item {
+  color: black; /* Text color */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-item:hover {
+  color: #ffff;
+  background-color: #427d9d; /* Light gray background on hover */
+}
+
+.dropdown-toggle {
+  background-color: #ddf2fd; /* Background color */
+  border-color: #ddf2fd; /* Border color */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 40px);
+  
+}
+
+.dropdown-toggle:hover {
+  background-color: #427d9d; /* Hover background color */
+  border-color: #427d9d; /* Hover border color */
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.dropdown-item .material-symbols-outlined {
+  margin-right: 8px; /* Adjust the spacing between icon and text */
+}
+
+.profiletoggle:hover{
+  color: #ffff;
+}

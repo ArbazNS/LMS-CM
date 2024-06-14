@@ -1,0 +1,276 @@
+/* General Styles */
+.course-header-content {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+
+.course-detail-card {
+  background-color: #fff;
+  border: none;
+}
+
+.card-title {
+  margin-bottom: 20px;
+}
+
+.card-text {
+  color: #333;
+}
+
+.thumbnail {
+  text-align: center;
+}
+
+.price-enroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-price {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-right: 10px;
+}
+.course-header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.course-meta .badge {
+  margin-right: 5px;
+}
+.course-header-content {
+  color: white;
+}
+
+.price-enroll-container {
+  display: flex;
+  align-items: center;
+}
+
+.enroll-button {
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ background-color: #007bff;
+ border: none;
+ color: white;
+ padding: 10px 20px;
+ border-radius: 5px;
+ font-size: 16px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+  transform: translateY(-2px);
+  background-color: #0056b3;
+}
+
+.list-group-item {
+  background-color: #f8f9fa;
+}
+
+/* .instructor-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+} */
+
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.instructor-info {
+  flex: 1;
+  color: #fff;
+}
+
+.ml-2{
+  margin-right: 15px;
+}
+
+.card-text strong {
+  /* color: #1c4877; */
+  color: #fff;  /* here */
+}
+
+.card-text p{
+  color: #f8f9fa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.course-content-carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 -15px;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%; /* Adjust for arrow button width */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  min-width: calc(25% - 30px); /* Adjust for margin */
+  margin: 0 15px;
+  box-sizing: border-box;
+}
+
+.carousel-arrow {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel-arrow-left {
+  left: -40px;
+  color: #1c4877;
+}
+
+.carousel-arrow-right {
+  right: -40px;
+  color: #1c4877;
+}
+
+.carousel-arrow:disabled {
+  cursor:default;
+  color:#c9def4;
+}
+
+.course-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-card-title {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body h5 {
+  margin: 0;
+}
+
+.card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+
+.what-you-will-learn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.learn-item {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.learn-item:hover {
+  background: #e0e0e0;
+}
+
+.learn-circle {
+  width: 30px;
+  height: 30px;
+  background: #346dab;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.instructor-profile {
+  display: flex;
+  background-color: #346dab;
+  flex-direction: row;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  justify-content: center; /* Horizontally center child elements */
+  align-items: center; /* Horizontally centers items in the flex container */
+  /* background-image: url('https://binaryinformatics.com/wp-content/uploads/2023/06/ReactJS-jpg.webp'); */
+}
+
+.instructor-profile .text-center {
+  flex: 0 0 150px;
+  color: #fff;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 40px;
+}
+
+.ml-3 {
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.instructor-bio{
+  text-align: justify;
+  color: #fff;
+}
+
+
