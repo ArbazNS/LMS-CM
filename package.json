@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "coursemanagement",
   "version": "0.1.0",
   "private": true,
@@ -40,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+  "dependencies": {
+    "react-router-dom": "^6.22.3"
+>>>>>>> daa801a97b9c42103e99c6de6be87748c61b257a
   }
 }
